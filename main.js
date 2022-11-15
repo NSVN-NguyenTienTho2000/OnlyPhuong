@@ -6,8 +6,8 @@ var imgWidth = 120; // width of images (unit: px)
 var imgHeight = 170; // height of images (unit: px)
 
 // Link of background music - set 'null' if you dont want to play background music
-var bgMusicURL = 'youtube.com/watch?v=mKxzJzp6oes&list=RDMM&index=18&ab_channel=FreakDMusic';
-var bgMusicControls = true; // Show UI music control
+var bgMusicURL = './img/ON THE WAY TO MEET YOU  ABLE.mp3';
+var bgMusicControls = false; // Show UI music control
 
 
 
@@ -65,7 +65,7 @@ if (autoRotate) {
 // add background music
 if (bgMusicURL) {
   document.getElementById('music-container').innerHTML += `
-<audio src="${bgMusicURL}" ${bgMusicControls? 'controls': ''} autoplay loop>    
+<audio src="${bgMusicURL}" autoplay loop>    
 <p>If you are reading this, it is because your browser does not support the audio element.</p>
 </audio>
 `;
